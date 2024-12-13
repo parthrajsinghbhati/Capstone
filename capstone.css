@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'DotGothic16';
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 10px 10px;    
+    width: 98vw;
+    font-size:2.5vw;
+}
+.header div{
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-right: 2vw;
+}
+.header div:hover{
+    transform: scale(1.08);
+}
+.header2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.main{
+    padding: 20px;
+}
+.main-header{
+    text-align: center;
+    font-weight: 400;
+    font-size: x-large;
+
+}
+.main-header img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 5vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5vw;
+    height: 130vh;
+}
+.flex{
+    display: flex;
+    flex-direction: column;    
+}
+.item{
+    font-family: 'Archivo';
+    margin-bottom: 4vw;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.item:hover{
+    transform: scale(1.08);
+}
+.item img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.item h4{
+    margin: 0 0 5px 0;
+    padding: 0;
+    font-size: 15px;
+}
+.item p{
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+.i1,.i5,.i9{
+    height: 32vh;
+    width: 41vw;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.i2,.i6,.i7{
+    height: 23vh;
+    width: 41vw;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.i3,.i4,.i8{
+    height: 41vh;
+    width: 41vw;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.i1:hover,.i2:hover,.i3:hover,.i4:hover,.i5:hover,.i6:hover,.i7:hover,.i8:hover,.i9:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+.main-caption{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    margin: 4em 1em; 
+}
+.main-footer{
+    margin: 4em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    border-bottom: 1px solid black;
+}
+.footer1{
+    font-size:larger;
+}
+.footer2{
+    font-family: 'Archivo';
+    font-size: small;
+    font-weight: lighter;
+}
+.footer{
+    margin: 4em 4vw 18vh;
+    text-align: center;
+}
+#form{
+    font-family: 'Archivo';
+    font-size: small;
+}
+.box{
+    display: flex;
+    justify-content: center;    
+}
+.footer-box{
+    width: 1.5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Archivo';
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1rem;
+}
+input[type='submit']{
+    background-color:#2419F3;
+    color: white;
+    width: 40vw;
+    border-radius: 8px;
+    line-height: 1.5;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+input[type='submit']:hover{
+    background-color: #0c079a;
+}
+#skip{
+    font-family: 'Archivo';
+    color:#2419F3;
+    font-size: small;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#skip:hover{
+    background-color: #2419F3;
+    color: white;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+.page-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 1vw 1vh 1vw;
+}
+#follow{
+    font-family: 'Archivo';
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: medium;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#follow:hover{
+    background-color: #2419F3;
+    color: white;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);    
+}
